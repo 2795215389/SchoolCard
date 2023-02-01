@@ -1,0 +1,527 @@
+2022-12-07 11:04:31.053  INFO 16740 --- [main] com.js.card.CardApplication              : Starting CardApplication using Java 1.8.0_172 on DESKTOP-AUAGDG0 with PID 16740 (D:\JsJavaProject\MyLearning\OraclePractice\card\target\classes started by 27952 in D:\JsJavaProject\MyLearning\OraclePractice\card)
+2022-12-07 11:04:31.056 DEBUG 16740 --- [main] com.js.card.CardApplication              : Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-07 11:04:31.057  INFO 16740 --- [main] com.js.card.CardApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-12-07 11:04:31.780  INFO 16740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-07 11:04:31.780  INFO 16740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-07 11:04:31.780  INFO 16740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-07 11:04:31.863  INFO 16740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-07 11:04:31.863  INFO 16740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2022-12-07 11:04:31.915 DEBUG 16740 --- [main] com.zaxxer.hikari.HikariConfig           : Driver class oracle.jdbc.driver.OracleDriver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2022-12-07 11:04:32.321  INFO 16740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-07 11:04:32.330  INFO 16740 --- [main] com.js.card.CardApplication              : Started CardApplication in 1.644 seconds (JVM running for 2.435)
+2022-12-07 11:05:22.498  INFO 16740 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 11:05:22.498  INFO 16740 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-07 11:05:22.498  INFO 16740 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-07 11:05:22.514 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension................................false
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : autoCommit................................true
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : catalog................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : connectionInitSql................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTestQuery................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTimeout................................30000
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSource................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceClassName................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceProperties................................{password=<masked>}
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : driverClassName................................"oracle.jdbc.driver.OracleDriver"
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckProperties................................{}
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : idleTimeout................................600000
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout................................1
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries................................false
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : jdbcUrl................................jdbc:oracle:thin:@127.0.0.1:1521:WEST
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : keepaliveTime................................0
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold................................0
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : maxLifetime................................1800000
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : maximumPoolSize................................10
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : metricRegistry................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : minimumIdle................................10
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : password................................<masked>
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : poolName................................"HikariPool-1"
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : readOnly................................false
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : registerMbeans................................false
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : scheduledExecutor................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : schema................................none
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : threadFactory................................internal
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : transactionIsolation................................default
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : username................................"CARDMS"
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : validationTimeout................................5000
+2022-12-07 11:05:22.529  INFO 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-07 11:05:22.529  WARN 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2022-12-07 11:05:22.529 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Driver class oracle.jdbc.driver.OracleDriver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+
+2022-12-07 11:05:22.966 DEBUG 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@620d7b7d
+2022-12-07 11:05:22.967  INFO 16740 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-07 11:05:22.971 DEBUG 16740 --- [http-nio-8080-exec-2] c.j.c.m.GoodsMapper.selectByExample      : ==>  Preparing: SELECT GOOD_NO, GOOD_NAME, GOOD_PRICE, GOOD_STOCK FROM GOODS
+2022-12-07 11:05:23.015 DEBUG 16740 --- [http-nio-8080-exec-2] c.j.c.m.GoodsMapper.selectByExample      : ==> Parameters: 
+2022-12-07 11:05:23.066 DEBUG 16740 --- [http-nio-8080-exec-2] c.j.c.m.GoodsMapper.selectByExample      : <==      Total: 9
+2022-12-07 11:05:23.072 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-12-07 11:05:23.089 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@76606988
+2022-12-07 11:05:23.104 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6207692
+2022-12-07 11:05:23.120 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@57729cfc
+2022-12-07 11:05:23.136 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6a48775c
+2022-12-07 11:05:23.152 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@533c272f
+2022-12-07 11:05:23.166 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5d5fd9d0
+2022-12-07 11:05:23.186 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@29215897
+2022-12-07 11:05:23.200 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5325437a
+2022-12-07 11:05:23.215 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@669e2da4
+2022-12-07 11:05:23.215 DEBUG 16740 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:05:53.077 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:05:53.077 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:06:23.086 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:06:23.086 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:06:53.088 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:06:53.088 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:07:23.102 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:07:23.102 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:07:53.111 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:07:53.111 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:08:23.121 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:08:23.121 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:08:53.123 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:08:53.123 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:09:17.724 DEBUG 16740 --- [http-nio-8080-exec-5] c.j.c.m.CardManageMapper.cardRegister    : ==>  Preparing: {call CARDMS.CARD_REGISTER(?)}
+2022-12-07 11:09:17.734 DEBUG 16740 --- [http-nio-8080-exec-5] c.j.c.m.CardManageMapper.cardRegister    : ==> Parameters: 010430(String)
+2022-12-07 11:09:23.131 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:09:23.131 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:09:53.133 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:09:53.133 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:10:16.627 DEBUG 16740 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.cardRecharge    : ==>  Preparing: {call CARDMS.CARD_RECHARGE(?,?)}
+2022-12-07 11:10:16.629 DEBUG 16740 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.cardRecharge    : ==> Parameters: 010430(String), 100.5(BigDecimal)
+2022-12-07 11:10:23.145 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:10:23.145 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:10:53.148 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:10:53.148 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:11:23.150 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:11:23.150 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:11:53.162 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:11:53.162 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:12:18.376 DEBUG 16740 --- [http-nio-8080-exec-9] c.j.c.m.C.selectByExample                : ==>  Preparing: SELECT CARD_NO, SNO, BALANCE FROM CARD_MANAGE
+2022-12-07 11:12:18.376 DEBUG 16740 --- [http-nio-8080-exec-9] c.j.c.m.C.selectByExample                : ==> Parameters: 
+2022-12-07 11:12:18.376 DEBUG 16740 --- [http-nio-8080-exec-9] c.j.c.m.C.selectByExample                : <==      Total: 4
+2022-12-07 11:12:23.166 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:12:23.166 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:12:53.175 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:12:53.175 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:13:23.177 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:13:23.177 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:13:53.190 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:13:53.190 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:14:23.191 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:14:23.191 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:14:53.191 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:14:53.191 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:14:54.006 DEBUG 16740 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.cardReplace     : ==>  Preparing: {call CARDMS.CARD_REPLACE(?)}
+2022-12-07 11:14:54.006 DEBUG 16740 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.cardReplace     : ==> Parameters: 010430(String)
+2022-12-07 11:15:21.526 DEBUG 16740 --- [http-nio-8080-exec-3] c.j.c.m.C.selectByExample                : ==>  Preparing: SELECT CARD_NO, SNO, BALANCE FROM CARD_MANAGE
+2022-12-07 11:15:21.526 DEBUG 16740 --- [http-nio-8080-exec-3] c.j.c.m.C.selectByExample                : ==> Parameters: 
+2022-12-07 11:15:21.528 DEBUG 16740 --- [http-nio-8080-exec-3] c.j.c.m.C.selectByExample                : <==      Total: 4
+2022-12-07 11:15:23.192 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:15:23.192 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:15:53.199 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:15:53.199 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:16:23.212 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:16:23.212 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:16:48.979 DEBUG 16740 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.cardDelete      : ==>  Preparing: {call CARDMS.CARD_DELETE(?)}
+2022-12-07 11:16:48.980 DEBUG 16740 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.cardDelete      : ==> Parameters: 010430(String)
+2022-12-07 11:16:53.232 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:16:53.232 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:17:23.245 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:17:23.245 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:17:40.174 DEBUG 16740 --- [http-nio-8080-exec-7] c.j.c.m.C.selectByExample                : ==>  Preparing: SELECT CARD_NO, SNO, BALANCE FROM CARD_MANAGE
+2022-12-07 11:17:40.174 DEBUG 16740 --- [http-nio-8080-exec-7] c.j.c.m.C.selectByExample                : ==> Parameters: 
+2022-12-07 11:17:40.175 DEBUG 16740 --- [http-nio-8080-exec-7] c.j.c.m.C.selectByExample                : <==      Total: 3
+2022-12-07 11:17:53.258 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:17:53.258 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:18:23.274 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:18:23.274 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:18:29.040 DEBUG 16740 --- [http-nio-8080-exec-8] c.j.c.m.C.selectByExample                : ==>  Preparing: SELECT CARD_NO, SNO, BALANCE FROM CARD_MANAGE
+2022-12-07 11:18:29.040 DEBUG 16740 --- [http-nio-8080-exec-8] c.j.c.m.C.selectByExample                : ==> Parameters: 
+2022-12-07 11:18:29.041 DEBUG 16740 --- [http-nio-8080-exec-8] c.j.c.m.C.selectByExample                : <==      Total: 7
+2022-12-07 11:18:53.274 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:18:53.274 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:19:23.290 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:19:23.290 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:19:53.294 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:19:53.294 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:20:11.339 DEBUG 16740 --- [http-nio-8080-exec-1] c.j.c.m.CardManageMapper.selectBySno     : ==>  Preparing: select CARD_NO, SNO, BALANCE from CARD_MANAGE where SNO = ?
+2022-12-07 11:20:11.340 DEBUG 16740 --- [http-nio-8080-exec-1] c.j.c.m.CardManageMapper.selectBySno     : ==> Parameters: 010411(String)
+2022-12-07 11:20:11.340 DEBUG 16740 --- [http-nio-8080-exec-1] c.j.c.m.CardManageMapper.selectBySno     : <==      Total: 1
+2022-12-07 11:20:23.306 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:20:23.306 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:20:53.307 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:20:53.307 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:21:23.309 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:21:23.309 DEBUG 16740 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:22:41.417  INFO 16700 --- [main] com.js.card.CardApplication              : Starting CardApplication using Java 1.8.0_172 on DESKTOP-AUAGDG0 with PID 16700 (D:\JsJavaProject\MyLearning\OraclePractice\card\target\classes started by 27952 in D:\JsJavaProject\MyLearning\OraclePractice\card)
+2022-12-07 11:22:41.417 DEBUG 16700 --- [main] com.js.card.CardApplication              : Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-07 11:22:41.417  INFO 16700 --- [main] com.js.card.CardApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-12-07 11:22:42.186  INFO 16700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-07 11:22:42.186  INFO 16700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-07 11:22:42.186  INFO 16700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-07 11:22:42.264  INFO 16700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-07 11:22:42.264  INFO 16700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 784 ms
+2022-12-07 11:22:42.311 DEBUG 16700 --- [main] com.zaxxer.hikari.HikariConfig           : Driver class oracle.jdbc.driver.OracleDriver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2022-12-07 11:22:42.677  INFO 16700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-07 11:22:42.693  INFO 16700 --- [main] com.js.card.CardApplication              : Started CardApplication in 1.582 seconds (JVM running for 2.246)
+2022-12-07 11:22:48.494  INFO 16700 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 11:22:48.494  INFO 16700 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-07 11:22:48.494  INFO 16700 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension................................false
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : autoCommit................................true
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : catalog................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : connectionInitSql................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTestQuery................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTimeout................................30000
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSource................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceClassName................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceProperties................................{password=<masked>}
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : driverClassName................................"oracle.jdbc.driver.OracleDriver"
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckProperties................................{}
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : idleTimeout................................600000
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout................................1
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries................................false
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : jdbcUrl................................jdbc:oracle:thin:@127.0.0.1:1521:WEST
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : keepaliveTime................................0
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold................................0
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : maxLifetime................................1800000
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : maximumPoolSize................................10
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : metricRegistry................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : minimumIdle................................10
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : password................................<masked>
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : poolName................................"HikariPool-1"
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : readOnly................................false
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : registerMbeans................................false
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : scheduledExecutor................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : schema................................none
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : threadFactory................................internal
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : transactionIsolation................................default
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : username................................"CARDMS"
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : validationTimeout................................5000
+2022-12-07 11:22:48.525  INFO 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-07 11:22:48.525  WARN 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2022-12-07 11:22:48.525 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Driver class oracle.jdbc.driver.OracleDriver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+
+2022-12-07 11:22:48.964 DEBUG 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1dc708bd
+2022-12-07 11:22:48.964  INFO 16700 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-07 11:22:48.980 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.C.selectByExample                : ==>  Preparing: SELECT SNO, BEHAVE, AMOUNT, CONSUME_TIME FROM CONSUME_MANAGE WHERE ((SNO = ?))
+2022-12-07 11:22:49.012 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.C.selectByExample                : ==> Parameters: 010411(String)
+2022-12-07 11:22:49.059 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.C.selectByExample                : <==      Total: 3
+2022-12-07 11:22:49.090 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-12-07 11:22:49.106 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@68244600
+2022-12-07 11:22:49.121 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@187a0372
+2022-12-07 11:22:49.137 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4936b374
+2022-12-07 11:22:49.137 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7190eb3f
+2022-12-07 11:22:49.153 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4d780efb
+2022-12-07 11:22:49.168 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4af8d25f
+2022-12-07 11:22:49.216 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3b1ae6a9
+2022-12-07 11:22:49.247 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@28a685c2
+2022-12-07 11:22:49.278 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@16c21177
+2022-12-07 11:22:49.278 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:23:19.092 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:23:19.092 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:23:45.606 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.c.m.GoodsMapper.selectByExample      : ==>  Preparing: SELECT GOOD_NO, GOOD_NAME, GOOD_PRICE, GOOD_STOCK FROM GOODS
+2022-12-07 11:23:45.606 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.c.m.GoodsMapper.selectByExample      : ==> Parameters: 
+2022-12-07 11:23:45.606 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.c.m.GoodsMapper.selectByExample      : <==      Total: 9
+2022-12-07 11:23:49.117 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:23:49.117 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:24:19.119 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:24:19.119 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:24:49.132 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:24:49.132 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:24:53.799 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.selectBySno     : ==>  Preparing: select CARD_NO, SNO, BALANCE from CARD_MANAGE where SNO = ?
+2022-12-07 11:24:53.799 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.selectBySno     : ==> Parameters: 123456(String)
+2022-12-07 11:24:53.800 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.selectBySno     : <==      Total: 1
+2022-12-07 11:24:53.801 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.mapper.GoodsMapper.selectByName    : ==>  Preparing: select GOOD_NO, GOOD_NAME, GOOD_PRICE, GOOD_STOCK from GOODS where GOOD_NAME = ?
+2022-12-07 11:24:53.801 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.mapper.GoodsMapper.selectByName    : ==> Parameters: 百事可乐(String)
+2022-12-07 11:24:53.802 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.mapper.GoodsMapper.selectByName    : <==      Total: 1
+2022-12-07 11:24:53.802 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.C.selectBalanceBySno             : ==>  Preparing: select CARD_NO, SNO, BALANCE from CARD_MANAGE where SNO = ?
+2022-12-07 11:24:53.802 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.C.selectBalanceBySno             : ==> Parameters: 123456(String)
+2022-12-07 11:24:53.803 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.C.selectBalanceBySno             : <==      Total: 1
+2022-12-07 11:24:53.813 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.mapper.ConsumeManageMapper.insert  : ==>  Preparing: insert into CONSUME_MANAGE (SNO, BEHAVE, AMOUNT, CONSUME_TIME) values (?, ?, ?, ?)
+2022-12-07 11:24:53.815 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.mapper.ConsumeManageMapper.insert  : ==> Parameters: 123456(String), 购物(String), 6.0(BigDecimal), 2022-12-07 11:24:53.811(Timestamp)
+2022-12-07 11:24:53.816 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.mapper.ConsumeManageMapper.insert  : <==    Updates: 1
+2022-12-07 11:24:53.817 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.updateBalance   : ==>  Preparing: update CARD_MANAGE set BALANCE = BALANCE-? where SNO = ?
+2022-12-07 11:24:53.817 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.updateBalance   : ==> Parameters: 6.0(BigDecimal), 123456(String)
+2022-12-07 11:24:53.818 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.CardManageMapper.updateBalance   : <==    Updates: 1
+2022-12-07 11:24:53.820 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.GoodsMapper.updateShopStock      : ==>  Preparing: update GOODS set GOOD_STOCK = GOOD_STOCK-? where GOOD_NAME = ?
+2022-12-07 11:24:53.820 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.GoodsMapper.updateShopStock      : ==> Parameters: 2(BigDecimal), 百事可乐(String)
+2022-12-07 11:24:53.822 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.GoodsMapper.updateShopStock      : <==    Updates: 1
+2022-12-07 11:25:19.141 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:25:19.141 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:25:49.142 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:25:49.142 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:26:19.157 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:26:19.157 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:26:49.171 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:26:49.171 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:27:19.177 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:27:19.177 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:27:36.634 DEBUG 16700 --- [http-nio-8080-exec-9] c.j.c.m.WindowMapper.selectByExample     : ==>  Preparing: SELECT WINDOW_NO, WINDOW_NAME, CNO FROM WINDOW WHERE ((CNO = ?))
+2022-12-07 11:27:36.634 DEBUG 16700 --- [http-nio-8080-exec-9] c.j.c.m.WindowMapper.selectByExample     : ==> Parameters: 001114(String)
+2022-12-07 11:27:36.637 DEBUG 16700 --- [http-nio-8080-exec-9] c.j.c.m.WindowMapper.selectByExample     : <==      Total: 0
+2022-12-07 11:27:49.190 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:27:49.190 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:27:49.547 DEBUG 16700 --- [http-nio-8080-exec-10] c.j.c.m.WindowMapper.selectByExample     : ==>  Preparing: SELECT WINDOW_NO, WINDOW_NAME, CNO FROM WINDOW WHERE ((CNO = ?))
+2022-12-07 11:27:49.547 DEBUG 16700 --- [http-nio-8080-exec-10] c.j.c.m.WindowMapper.selectByExample     : ==> Parameters: 00004(String)
+2022-12-07 11:27:49.548 DEBUG 16700 --- [http-nio-8080-exec-10] c.j.c.m.WindowMapper.selectByExample     : <==      Total: 0
+2022-12-07 11:28:06.328 DEBUG 16700 --- [http-nio-8080-exec-1] c.j.c.m.WindowMapper.selectByExample     : ==>  Preparing: SELECT WINDOW_NO, WINDOW_NAME, CNO FROM WINDOW WHERE ((CNO = ?))
+2022-12-07 11:28:06.328 DEBUG 16700 --- [http-nio-8080-exec-1] c.j.c.m.WindowMapper.selectByExample     : ==> Parameters: 001(String)
+2022-12-07 11:28:06.329 DEBUG 16700 --- [http-nio-8080-exec-1] c.j.c.m.WindowMapper.selectByExample     : <==      Total: 2
+2022-12-07 11:28:19.199 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:28:19.199 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:28:49.213 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:28:49.213 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:29:19.222 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:29:19.222 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:29:49.234 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:29:49.234 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:30:19.246 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:30:19.246 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:30:30.864  WARN 16700 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'cno' for method parameter type String is not present]
+2022-12-07 11:30:49.254 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:30:49.254 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:31:19.266 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:31:19.266 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:31:49.269 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:31:49.269 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:32:18.686  WARN 16700 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'cno' for method parameter type String is not present]
+2022-12-07 11:32:19.275 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:32:19.275 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:32:27.708 DEBUG 16700 --- [http-nio-8080-exec-8] c.j.c.m.DishesMapper.selectByExample     : ==>  Preparing: SELECT DISH_NO, DISH_NAME, DISH_PRICE, DISH_STOCK, WINDOW_NO FROM DISHES WHERE ((WINDOW_NO = ?))
+2022-12-07 11:32:27.708 DEBUG 16700 --- [http-nio-8080-exec-8] c.j.c.m.DishesMapper.selectByExample     : ==> Parameters: 002(String)
+2022-12-07 11:32:27.710 DEBUG 16700 --- [http-nio-8080-exec-8] c.j.c.m.DishesMapper.selectByExample     : <==      Total: 2
+2022-12-07 11:32:49.277 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:32:49.277 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:33:19.279 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:33:19.279 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:33:49.288 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:33:49.288 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:34:15.868 DEBUG 16700 --- [http-nio-8080-exec-1] c.j.c.m.CardManageMapper.selectBySno     : ==>  Preparing: select CARD_NO, SNO, BALANCE from CARD_MANAGE where SNO = ?
+2022-12-07 11:34:15.868 DEBUG 16700 --- [http-nio-8080-exec-1] c.j.c.m.CardManageMapper.selectBySno     : ==> Parameters: 010430(String)
+2022-12-07 11:34:15.869 DEBUG 16700 --- [http-nio-8080-exec-1] c.j.c.m.CardManageMapper.selectBySno     : <==      Total: 0
+2022-12-07 11:34:15.869  INFO 16700 --- [http-nio-8080-exec-1] com.js.card.service.DiningServiceImpl    : 不存在学号为:010430,的校园卡
+2022-12-07 11:34:19.294 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:34:19.294 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:34:49.300 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:34:49.300 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:35:10.865 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.selectBySno     : ==>  Preparing: select CARD_NO, SNO, BALANCE from CARD_MANAGE where SNO = ?
+2022-12-07 11:35:10.865 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.selectBySno     : ==> Parameters: 123456(String)
+2022-12-07 11:35:10.866 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.selectBySno     : <==      Total: 1
+2022-12-07 11:35:10.866 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.WindowMapper.selectWindowByName  : ==>  Preparing: select WINDOW_NO, WINDOW_NAME, CNO FROM WINDOW WHERE WINDOW_NAME = ?
+2022-12-07 11:35:10.866 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.WindowMapper.selectWindowByName  : ==> Parameters: 小盘菜(String)
+2022-12-07 11:35:10.867 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.WindowMapper.selectWindowByName  : <==      Total: 1
+2022-12-07 11:35:10.868 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.DishesMapper.getDishByName  : ==>  Preparing: select DISH_NO, DISH_NAME, DISH_PRICE, DISH_STOCK, WINDOW_NO from DISHES where DISH_NAME = ? and WINDOW_NO=?
+2022-12-07 11:35:10.868 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.DishesMapper.getDishByName  : ==> Parameters: 水煮肉片(String), 002(String)
+2022-12-07 11:35:10.870 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.DishesMapper.getDishByName  : <==      Total: 1
+2022-12-07 11:35:10.870 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.C.selectBalanceBySno             : ==>  Preparing: select CARD_NO, SNO, BALANCE from CARD_MANAGE where SNO = ?
+2022-12-07 11:35:10.870 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.C.selectBalanceBySno             : ==> Parameters: 123456(String)
+2022-12-07 11:35:10.871 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.C.selectBalanceBySno             : <==      Total: 1
+2022-12-07 11:35:10.871 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.ConsumeManageMapper.insert  : ==>  Preparing: insert into CONSUME_MANAGE (SNO, BEHAVE, AMOUNT, CONSUME_TIME) values (?, ?, ?, ?)
+2022-12-07 11:35:10.871 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.ConsumeManageMapper.insert  : ==> Parameters: 123456(String), 就餐(String), 15.0(BigDecimal), 2022-12-07 11:35:10.871(Timestamp)
+2022-12-07 11:35:10.873 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.ConsumeManageMapper.insert  : <==    Updates: 1
+2022-12-07 11:35:10.873 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.updateBalance   : ==>  Preparing: update CARD_MANAGE set BALANCE = BALANCE-? where SNO = ?
+2022-12-07 11:35:10.873 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.updateBalance   : ==> Parameters: 15.0(BigDecimal), 123456(String)
+2022-12-07 11:35:10.874 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.CardManageMapper.updateBalance   : <==    Updates: 1
+2022-12-07 11:35:10.874 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.DishesMapper.updateDishStock     : ==>  Preparing: update DISHES set DISH_STOCK = DISH_STOCK-? where DISH_NAME = ?
+2022-12-07 11:35:10.875 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.DishesMapper.updateDishStock     : ==> Parameters: 1(Integer), 水煮肉片(String)
+2022-12-07 11:35:10.879 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.m.DishesMapper.updateDishStock     : <==    Updates: 1
+2022-12-07 11:35:19.304 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:35:19.304 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:35:49.312 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:35:49.312 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:36:19.321 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:36:19.321 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:36:49.328 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:36:49.328 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:37:12.388 DEBUG 16700 --- [http-nio-8080-exec-5] c.j.c.m.LibraryMapper.selectByExample    : ==>  Preparing: SELECT BOOK_NO, BOOK_NAME, BOOK_STOCK FROM LIBRARY
+2022-12-07 11:37:12.388 DEBUG 16700 --- [http-nio-8080-exec-5] c.j.c.m.LibraryMapper.selectByExample    : ==> Parameters: 
+2022-12-07 11:37:12.388 DEBUG 16700 --- [http-nio-8080-exec-5] c.j.c.m.LibraryMapper.selectByExample    : <==      Total: 9
+2022-12-07 11:37:19.342 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:37:19.342 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:37:49.354 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:37:49.354 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:38:19.357 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:38:19.357 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:38:30.918 DEBUG 16700 --- [http-nio-8080-exec-8] c.j.c.mapper.LibraryMapper.borrowBook    : ==>  Preparing: call CARDMS.BORROW_BOOK(?,?)
+2022-12-07 11:38:30.929 DEBUG 16700 --- [http-nio-8080-exec-8] c.j.c.mapper.LibraryMapper.borrowBook    : ==> Parameters: 123456(String), 罗生门(String)
+2022-12-07 11:38:49.367 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:38:49.367 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:39:03.139 DEBUG 16700 --- [http-nio-8080-exec-9] c.j.c.m.LibraryMapper.selectByExample    : ==>  Preparing: SELECT BOOK_NO, BOOK_NAME, BOOK_STOCK FROM LIBRARY
+2022-12-07 11:39:03.139 DEBUG 16700 --- [http-nio-8080-exec-9] c.j.c.m.LibraryMapper.selectByExample    : ==> Parameters: 
+2022-12-07 11:39:03.141 DEBUG 16700 --- [http-nio-8080-exec-9] c.j.c.m.LibraryMapper.selectByExample    : <==      Total: 9
+2022-12-07 11:39:19.369 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:39:19.369 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:39:49.369 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:39:49.369 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:40:04.955 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.LibraryMapper.returnBook    : ==>  Preparing: call CARDMS.RETURN_BOOK(?,?)
+2022-12-07 11:40:04.956 DEBUG 16700 --- [http-nio-8080-exec-2] c.j.c.mapper.LibraryMapper.returnBook    : ==> Parameters: 123456(String), 罗生门(String)
+2022-12-07 11:40:19.386 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:40:19.386 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:40:49.401 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:40:49.401 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:40:51.192 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.c.m.LibraryMapper.selectByExample    : ==>  Preparing: SELECT BOOK_NO, BOOK_NAME, BOOK_STOCK FROM LIBRARY
+2022-12-07 11:40:51.193 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.c.m.LibraryMapper.selectByExample    : ==> Parameters: 
+2022-12-07 11:40:51.194 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.c.m.LibraryMapper.selectByExample    : <==      Total: 9
+2022-12-07 11:41:19.417 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:41:19.417 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:41:49.431 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:41:49.431 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:42:19.434 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:42:19.434 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:42:49.449 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:42:49.449 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:43:00.762 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.C.selectByExample                : ==>  Preparing: SELECT SNO, BEHAVE, AMOUNT, CONSUME_TIME FROM CONSUME_MANAGE WHERE ((SNO = ?))
+2022-12-07 11:43:00.762 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.C.selectByExample                : ==> Parameters: 123456(String)
+2022-12-07 11:43:00.763 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.c.m.C.selectByExample                : <==      Total: 2
+2022-12-07 11:43:18.631 DEBUG 16700 --- [http-nio-8080-exec-7] c.j.c.m.C.selectByExample                : ==>  Preparing: SELECT SNO, BEHAVE, AMOUNT, CONSUME_TIME FROM CONSUME_MANAGE WHERE ((SNO = ?))
+2022-12-07 11:43:18.631 DEBUG 16700 --- [http-nio-8080-exec-7] c.j.c.m.C.selectByExample                : ==> Parameters: 123456(String)
+2022-12-07 11:43:18.632 DEBUG 16700 --- [http-nio-8080-exec-7] c.j.c.m.C.selectByExample                : <==      Total: 2
+2022-12-07 11:43:19.463 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:43:19.463 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:43:49.478 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:43:49.478 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:44:19.492 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:44:19.492 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:44:49.493 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:44:49.493 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:45:19.504 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:45:19.504 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:45:30.611 DEBUG 16700 --- [http-nio-8080-exec-10] c.j.c.mapper.GoodsMapper.getSouthGoods   : ==>  Preparing: select GOOD_NO, GOOD_NAME, GOOD_PRICE, GOOD_STOCK from GOODS@WEST_SOUTH_DBLINK
+2022-12-07 11:45:30.611 DEBUG 16700 --- [http-nio-8080-exec-10] c.j.c.mapper.GoodsMapper.getSouthGoods   : ==> Parameters: 
+2022-12-07 11:45:30.638 DEBUG 16700 --- [http-nio-8080-exec-10] c.j.c.mapper.GoodsMapper.getSouthGoods   : <==      Total: 6
+2022-12-07 11:45:49.516 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:45:49.516 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:46:19.530 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:46:19.530 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:46:40.381 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.card.mapper.CardManageMapper.wsCard  : ==>  Preparing: {call CARDMS.WS_CARD(?)}
+2022-12-07 11:46:40.381 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.card.mapper.CardManageMapper.wsCard  : ==> Parameters: 123456(String)
+2022-12-07 11:46:40.394 DEBUG 16700 --- [http-nio-8080-exec-3] com.js.card.mapper.GoodsMapper.buySouth  : ==>  Preparing: {call CARDMS.BUY_GOODS@WEST_SOUTH_DBLINK(?,?,?)}
+2022-12-07 11:46:40.395 DEBUG 16700 --- [http-nio-8080-exec-3] com.js.card.mapper.GoodsMapper.buySouth  : ==> Parameters: 123456(String), 凉白开(String), 1(BigDecimal)
+2022-12-07 11:46:40.407 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.card.mapper.CardManageMapper.wsBack  : ==>  Preparing: {call CARDMS.WS_BACK(?)}
+2022-12-07 11:46:40.407 DEBUG 16700 --- [http-nio-8080-exec-3] c.j.card.mapper.CardManageMapper.wsBack  : ==> Parameters: 123456(String)
+2022-12-07 11:46:49.537 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:46:49.537 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:47:19.546 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:47:19.546 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:47:49.550 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:47:49.550 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:48:19.566 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:48:19.566 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:48:49.573 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:48:49.573 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:49:19.576 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:49:19.576 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:49:49.587 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:49:49.587 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:50:19.601 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:50:19.601 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:50:44.553 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.card.mapper.CardManageMapper.wsCard  : ==>  Preparing: {call CARDMS.WS_CARD(?)}
+2022-12-07 11:50:44.553 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.card.mapper.CardManageMapper.wsCard  : ==> Parameters: 123456(String)
+2022-12-07 11:50:44.555 DEBUG 16700 --- [http-nio-8080-exec-6] c.js.card.mapper.DishesMapper.eatSouth   : ==>  Preparing: call CARDMS.DINING_FOOD@WEST_SOUTH_DBLINK(?,?,?,?)
+2022-12-07 11:50:44.556 DEBUG 16700 --- [http-nio-8080-exec-6] c.js.card.mapper.DishesMapper.eatSouth   : ==> Parameters: 自选窗口一(String), 123456(String), 菜品一(String), 1(BigDecimal)
+2022-12-07 11:50:44.563 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.card.mapper.CardManageMapper.wsBack  : ==>  Preparing: {call CARDMS.WS_BACK(?)}
+2022-12-07 11:50:44.563 DEBUG 16700 --- [http-nio-8080-exec-6] c.j.card.mapper.CardManageMapper.wsBack  : ==> Parameters: 123456(String)
+2022-12-07 11:50:49.605 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:50:49.605 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:51:16.501 DEBUG 16700 --- [http-nio-8080-exec-7] c.j.c.mapper.LibraryMapper.borrowSouth   : ==>  Preparing: call CARDMS.BORROW_BOOK@WEST_SOUTH_DBLINK(?,?)
+2022-12-07 11:51:16.501 DEBUG 16700 --- [http-nio-8080-exec-7] c.j.c.mapper.LibraryMapper.borrowSouth   : ==> Parameters: 123456(String), 数据结构(String)
+2022-12-07 11:51:19.610 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:51:19.610 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:51:49.613 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:51:49.613 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:51:55.690 DEBUG 16700 --- [http-nio-8080-exec-8] c.j.c.mapper.LibraryMapper.returnSouth   : ==>  Preparing: call CARDMS.RETURN_BOOK@WEST_SOUTH_DBLINK(?,?)
+2022-12-07 11:51:55.691 DEBUG 16700 --- [http-nio-8080-exec-8] c.j.c.mapper.LibraryMapper.returnSouth   : ==> Parameters: 123456(String), 数据结构(String)
+2022-12-07 11:52:05.786 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@187a0372: (connection has passed maxLifetime)
+2022-12-07 11:52:05.801 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@413771fa
+2022-12-07 11:52:09.096 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3b1ae6a9: (connection has passed maxLifetime)
+2022-12-07 11:52:09.109 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@31c09ea9
+2022-12-07 11:52:11.328 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4936b374: (connection has passed maxLifetime)
+2022-12-07 11:52:11.342 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6025848e
+2022-12-07 11:52:16.677 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1dc708bd: (connection has passed maxLifetime)
+2022-12-07 11:52:16.692 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7b623eec
+2022-12-07 11:52:19.617 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:52:19.617 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:52:23.432 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4d780efb: (connection has passed maxLifetime)
+2022-12-07 11:52:23.447 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1197e31d
+2022-12-07 11:52:40.175 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@28a685c2: (connection has passed maxLifetime)
+2022-12-07 11:52:40.191 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7cb722f8
+2022-12-07 11:52:41.857 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@16c21177: (connection has passed maxLifetime)
+2022-12-07 11:52:41.857 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2a01d5eb
+2022-12-07 11:52:42.306 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4af8d25f: (connection has passed maxLifetime)
+2022-12-07 11:52:42.321 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@50a68cf5
+2022-12-07 11:52:47.045 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@68244600: (connection has passed maxLifetime)
+2022-12-07 11:52:47.048 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7196010a
+2022-12-07 11:52:47.796 DEBUG 16700 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7190eb3f: (connection has passed maxLifetime)
+2022-12-07 11:52:47.796 DEBUG 16700 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@17ae95f6
+2022-12-07 11:52:49.622 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:52:49.622 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:53:19.635 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:53:19.635 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:53:49.639 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:53:49.639 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:54:19.650 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:54:19.650 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:54:49.652 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:54:49.652 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:55:19.666 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:55:19.666 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:55:49.675 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:55:49.675 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:56:19.678 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:56:19.678 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:56:49.685 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:56:49.685 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:57:19.687 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:57:19.687 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:57:49.701 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:57:49.701 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:58:19.721 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:58:19.721 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:58:49.730 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:58:49.730 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:59:19.737 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:59:19.737 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 11:59:49.755 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 11:59:49.755 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:00:19.769 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:00:19.769 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:00:49.773 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:00:49.773 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:01:19.777 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:01:19.777 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:01:49.793 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:01:49.793 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:02:19.795 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:02:19.795 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:02:49.806 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:02:49.806 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:03:19.811 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:03:19.811 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:03:49.821 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:03:49.821 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:04:19.822 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:04:19.822 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:04:49.828 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:04:49.828 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:05:19.834 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:05:19.834 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:05:49.839 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:05:49.839 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-07 12:06:19.847 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-07 12:06:19.847 DEBUG 16700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.

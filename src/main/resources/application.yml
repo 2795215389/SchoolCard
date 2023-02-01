@@ -1,0 +1,25 @@
+server:      #端口如果不配默认8080
+  port: 8080
+
+spring:
+  datasource:
+    #       name: test   #可以省略
+    url: jdbc:oracle:thin:@127.0.0.1:1521:WEST
+    username: CARDMS
+    password: WEST
+    #使用druid数据源
+    #       type: com.alibaba.druid.pool.DruidDataSource  #数据源类型不添加也可以
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+#slf4日志配置
+logging:
+  #配置级别
+  #分包配置级别，即不同的目录下可以使用不同的级别
+  level:
+    com: debug
+
+  #在不指定路径，只指定输出日志文件名，默认输出至当前目录
+  #若指定，则输出到指定目录
+  file:
+    name: log/card.log
+
